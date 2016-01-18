@@ -2,17 +2,16 @@
 
 namespace IAkumaI\SphinxsearchBundle\Search;
 
-use SphinxClient;
+use Sphinx\SphinxClient;
 
 use IAkumaI\SphinxsearchBundle\Exception\EmptyIndexException;
 use IAkumaI\SphinxsearchBundle\Exception\NoSphinxAPIException;
 use IAkumaI\SphinxsearchBundle\Doctrine\BridgeInterface;
 
-
 /**
  * Sphinx search engine
  *
- * @method string GetLastError () 
+ * @method string GetLastError ()
  * @method string GetLastWarning ()
  * @method bool IsConnectError()
  * @method null SetServer ( $host, $port = 0 )
